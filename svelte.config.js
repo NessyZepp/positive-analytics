@@ -1,15 +1,9 @@
 import adapter from '@sveltejs/adapter-vercel';
 
+/** @type {import('@sveltejs/kit').Config} */
 const config = {
   kit: {
-    // Use the Vercel adapter instead of adapter-auto
-    adapter: adapter({
-      // Edge runtime - faster cold starts, improved performance
-      runtime: 'edge',
-      
-      // For improved build performance
-      split: true,
-    })
+    adapter: adapter()
   }
 };
 

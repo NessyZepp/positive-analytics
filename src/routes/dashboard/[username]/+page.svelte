@@ -1,6 +1,6 @@
 <script>
   import { onMount } from 'svelte';
-  import { Doughnut, Line } from 'svelte-chartjs';
+  import { Chart } from 'chart.js/auto';
   import { supabase } from '$lib/supabaseClient';
   import { 
     getChannelInfo, 
