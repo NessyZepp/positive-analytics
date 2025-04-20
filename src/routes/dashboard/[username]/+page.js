@@ -1,4 +1,4 @@
-export const load = async ({ params, fetch }) => {
+export const load = ({ params }) => {
   return {
     username: params.username
   };

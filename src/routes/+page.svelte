@@ -1,11 +1,11 @@
 <script>
   import { goto } from '$app/navigation';
-  import { fade } from 'svelte/transition';
+  
   let username = '';
   let loading = false;
   let error = null;
   
-  async function handleSubmit() {
+  function handleSubmit() {
     if (!username) {
       error = 'Please enter a Twitch username';
       return;
@@ -27,7 +27,7 @@
   <title>Twitch Positivity - See Your Impact</title>
 </svelte:head>
 
-<main transition:fade={{ duration: 300 }}>
+<main>
   <div class="container">
     <h1>Twitch Positivity</h1>
     <p class="tagline">See the true impact of your content</p>
